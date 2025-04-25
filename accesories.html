@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming and Console Store</title>
+    <link rel="stylesheet" href="accesories.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="logo">GMONT</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Games</a></li>
+                <li><a href="consoles.html">Consoles & Peripherals</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="order.html">Computer Parts</a></li>
+                <li><a href="queries.html">Queries & FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script>
+            function toggleMenu() {
+                var navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+            }
+        </script>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Accesories,</h1>
+        <p>Level up your gaming setup with our wide range of high-quality gaming accessories. From precision controllers and immersive headsets to durable charging stations and custom skins, we offer everything you need to enhance your gameplay. Each accessory is designed for optimal performance and comfort, ensuring you get the most out of every gaming session. Explore our collection and take your gaming experience to new heights with GMONT!</p>
+        
+    </section>
+
+    <section class="keyboard-comparison">
+        <h2 class="keyboard-heading">Keyboards</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Razor G1</h3>
+                <img src="img/k1.avif" alt="Keyboard 1">
+                <p class="description">Razer is known for its high-performance gaming peripherals, including mechanical keyboards that offer customizable RGB lighting, responsive switches, and sleek designs. Ideal for gamers who want precision and style.</p>
+                <p class="price">$49.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Cosair</h3>
+                <img src="img/k2.jpg" alt="Keyboard 2">
+                <p class="description">Corsair offers a wide range of mechanical and RGB keyboards, featuring high-quality Cherry MX switches and advanced features like programmable keys and customizable lighting. Perfect for gamers and productivity users alike.</p>
+                <p class="price">$89.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Logited A4</h3>
+                <img src="img/k3.avif" alt="Keyboard 3">
+                <p class="description">Logitech is renowned for its versatile, durable keyboards, offering both wired and wireless options. With features like low-profile keys and ergonomic designs, they provide comfort and precision for both work and play.</p>
+                <p class="price">$59.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Steel Series G54</h3>
+                <img src="img/k4.avif" alt="Keyboard 4">
+                <p class="description">SteelSeries keyboards are built with durability and performance in mind. Featuring mechanical switches and customizable lighting, SteelSeries is a top choice for competitive gamers looking for a responsive and high-quality keyboard.</p>
+                <p class="price">$79.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mouse-comparison">
+        <h2 class="mouse-heading">Mouse Comparison</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Razer DeathAdder V2</h3>
+                <img src="img/m1.avif" alt="Mouse 1">
+                <p class="description">The Razer DeathAdder V2 is an ergonomic gaming mouse featuring Razer's Optical Mouse Switches for ultra-fast response times. With a 20,000 DPI optical sensor and customizable RGB lighting, it's designed for precision and comfort, making it ideal for both casual and competitive gamers.</p>
+                <p class="price">$29.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Logitech G Pro X Superlight</h3>
+                <img src="img/m2.avif" alt="Mouse 2">
+                <p class="description">The Logitech G Pro X Superlight is an ultra-lightweight, wireless gaming mouse engineered for speed and accuracy. Featuring the HERO sensor with up to 25,600 DPI sensitivity and a clean, ambidextrous design, it's perfect for esports professionals who need precision without any extra weight.</p>
+                <p class="price">$49.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>SteelSeries Rival 600</h3>
+                <img src="img/m3.avif" alt="Mouse 3">
+                <p class="description">The SteelSeries Rival 600 features dual sensors, including a true 1-to-1 tracking sensor and a depth sensor for precise, error-free gameplay. It also boasts split-trigger buttons and customizable weight adjustments, making it a versatile choice for gamers seeking a balanced and responsive mouse.</p>
+                <p class="price">$39.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Corsair Dark Core RGB/SE</h3>
+                <img src="img/m4.jpg" alt="Mouse 4">
+                <p class="description">The Corsair Dark Core RGB/SE is a wireless mouse with a 16,000 DPI optical sensor, featuring customizable side grips for a comfortable and personalized feel. It supports both Bluetooth and USB wired connections, making it versatile for different gaming setups, and has dynamic RGB lighting.</p>
+                <p class="price">$59.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="headset-comparison">
+        <h2 class="headset-heading">Headset Comparison</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Razer BlackShark V2 Pro</h3>
+                <img src="img/h1.avif" alt="Headset 1">
+                <p class="description">The Razer BlackShark V2 Pro is a wireless gaming headset with THX Spatial Audio, offering immersive surround sound. It features Razer’s TriForce Titanium 50mm drivers and a detachable microphone with advanced noise-canceling technology, providing clarity and comfort for long gaming sessions.</p>
+                <p class="price">$79.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Logitech G Pro X Wireless LIGHTSPEED</h3>
+                <img src="img/h2.avif" alt="Headset 2">
+                <p class="description">The Logitech G Pro X Wireless LIGHTSPEED headset delivers exceptional audio performance with 7.1 surround sound and a high-fidelity microphone for clear communication. It’s designed for esports professionals, offering both comfort and performance with a lightweight, durable frame.</p>
+                <p class="price">$99.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>SteelSeries Arctis 7</h3>
+                <img src="img/h3.avif" alt="Headset 3">
+                <p class="description">The SteelSeries Arctis 7 is a wireless gaming headset that offers 7.1 surround sound and a clear, bidirectional microphone. With a long-lasting battery life, comfortable ear cushions, and a durable design, it’s perfect for immersive gaming experiences, whether you're playing at home or on the go.</p>
+                <p class="price">$69.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Corsair Void Elite RGB Wireless</h3>
+                <img src="img/h4.avif" alt="Headset 4">
+                <p class="description">The Corsair Void Elite RGB Wireless headset features immersive 7.1 surround sound, custom-tuned 50mm neodymium drivers, and a noise-canceling microphone for clear communication. With memory foam ear cups and customizable RGB lighting, it provides both comfort and performance for extended gaming sessions.</p>
+                <p class="price">$89.99</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <p>© 2024 GMONT. All rights reserved.</p>
+          <nav class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms</a>
+          </nav>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="footer-right">
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#"><img src="img/fb.avif" alt="Facebook"></a>
+            <a href="#"><img src="img/x.avif" alt="Twitter"></a>
+            <a href="#"><img src="img/insta.avif" alt="Instagram"></a>
+            <a href="#"><img src="img/linkedin.avif" alt="LinkedIn"></a>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <p>Phone: +123-456-7890</p>
+            <p>Email: contact@gmont.com</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,465 @@
+/* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #0a0;
+    display: flex;
+    justify-content: center; /* Center the navbar */
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Navbar and Menu Styling for Mobile */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Show hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align heading and paragraph to the left */
+  height: 70vh; /* Adjust the height of the hero section */
+  background-image: url('img/bggg2.avif'); /* Add your image file here */
+  background-size: cover; /* Make sure the background image covers the whole section */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  color: #f1eaea;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1.5s;
+  padding-left: 20px; /* Add consistent padding for alignment */
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-left: 0; /* Reset additional margins */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 10px; /* Optional spacing above */
+  width: 700px;
+  text-align: left;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      height: 50vh; /* Reduce height on mobile */
+      padding-left: 15px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 2em; /* Reduce font size of heading */
+  }
+
+  .hero p {
+      font-size: 0.9em; /* Slightly smaller font for paragraph */
+      width: 90%; /* Adjust paragraph width */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 40vh; /* Further reduce height on very small screens */
+      padding-left: 10px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 1.8em; /* Even smaller heading font size */
+  }
+
+  .hero p {
+      font-size: 0.85em; /* Smaller paragraph font */
+      width: 100%; /* Allow paragraph to take up full width */
+  }
+}
+
+
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Styles for each card */
+  .card {
+    flex: 1;
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+  
+  /* Heading Styles */
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Description Styles */
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styles */
+  .card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Styles for the Our Journey Section */
+.our-journey {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .our-journey h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Container for the journey cards */
+  .journey-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Styles for each journey card */
+  .journey-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(25% - 20px); /* Make each card 25% width minus the gap */
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Image inside the journey card */
+  .journey-card img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+  }
+  
+  /* Description Styles inside each card */
+  .journey-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .journey-card {
+      width: calc(50% - 20px); /* Stack the cards in two columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .journey-card {
+      width: 100%; /* Stack the cards in one column on very small screens */
+    }
+  }
+  
+   /* Styles for the Our Team Section */
+.our-team {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .our-team h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Container for the Team cards */
+  .team-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for each team card */
+  .team-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(25% - 20px); /* Make each card 25% width minus the gap */
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Image inside the journey card */
+  .team-card img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+  }
+  
+  /* Description Styles inside each card */
+  .team-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .team-card {
+      width: calc(50% - 20px); /* Stack the cards in two columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-card {
+      width: 100%; /* Stack the cards in one column on very small screens */
+    }
+  }
+
+  /* Styles for the Our Branches Section */
+.our-branches {
+    padding: 40px 20px;
+  }
+  
+  .our-branches h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  /* Container for each branch */
+  .branch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  /* Image for each branch */
+  .branch img {
+    width: 200px; /* Adjust the image size */
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  /* Branch details section (description and map) */
+  .branch-details {
+    flex: 1;
+  }
+  
+  /* Description text */
+  .branch-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Map embedded inside the branch */
+  .branch-map iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .branch {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .branch img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .branch-details {
+      text-align: center;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  /* Right Section */
+  .footer-right {
+    text-align: right;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .social-icons a img {
+      margin-right: 5px;
+    }
+  }
+  
+  

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming and Console Store</title>
+    <link rel="stylesheet" href="consoles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="logo">GMONT</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="upcoimg.html">Upcoming Games</a></li>
+                <li><a href="consoles.html">Consoles & Pheripherals</a></li>
+                <li><a href="accesories.html">Accesories</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="order.html">Computer Parts</a></li>
+                <li><a href="queries.html">Queries %FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+            <script>
+                function toggleMenu() {
+                    var navbar = document.querySelector('.navbar');
+                    navbar.classList.toggle('active');
+                }
+            </script>
+
+
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Consoles & Pheripherals</h1>
+        <p>Get ready for the future of gaming! Our Upcoming Consoles section features the next-gen consoles that will redefine your gaming experience. From enhanced performance to cutting-edge technology, these consoles are designed to take your gameplay to new heights. Stay updated on the latest releases and be the first to experience the power, graphics, and features that will shape the future of gaming. Don’t miss out—your next favorite console is just around the corner!
+
+
+
+
+
+
+        </p>
+       
+    </section>
+
+    <section class="consoles">
+        <h2>Consoles</h2>
+        <div class="card-container">
+          <!-- Console 1 -->
+          <div class="card">
+            <h3>Sony PlayStation 5 (PS5)</h3>
+            <img src="img/ps5.png" alt="Console 1">
+            <p class="description">The PS5 emphasizes cutting-edge technology and immersive gaming, aligning with Sony’s tradition of delivering high-performance hardware and exclusive games. Its fast SSD and multimedia capabilities position it as a complete entertainment hub.</p>
+            <p class="price">$399.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Console 2 -->
+          <div class="card">
+            <h3>Microsoft Xbox Series X</h3>
+            <img src="img/download.jpg" alt="Console 2">
+            <p class="description">The Series X showcases Microsoft’s commitment to power and ecosystem integration. Its backward compatibility, 4K capabilities, and Game Pass service make it a symbol of value, versatility, and accessibility.</p>
+            <p class="price">$499.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Console 3 -->
+          <div class="card">
+            <h3>Nintendo Switch</h3>
+            <img src="img/xbox.jpg" alt="Console 3">
+            <p class="description">The Switch reflects Nintendo’s focus on innovation and broad appeal. Its hybrid design, combining handheld and console gaming, exemplifies the company’s creative approach to making gaming accessible to everyone.</p>
+            <p class="price">$599.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Console 4 -->
+          <div class="card">
+            <h3> Valve Steam Deck</h3>
+            <img src="img/steam.jpg" alt="Console 4">
+            <p class="description">The Steam Deck embodies Valve’s philosophy of empowering gamers through open ecosystems and PC gaming. It offers portable access to a vast library of games, emphasizing customizability and flexibility.</p>
+            <p class="price">$699.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="peripherals">
+        <h2>Peripherals</h2>
+        <div class="card-container">
+          <!-- Peripheral 1 -->
+          <div class="card">
+            <h3>Sony DualSense Controller (PS5)</h3>
+            <img src="img/ds.jpg" alt="Peripheral 1">
+            <p class="description">The DualSense represents Sony’s focus on immersive experiences, featuring adaptive triggers and haptic feedback that enhance gameplay by providing tactile sensations aligned with in-game actions.</p>
+            <p class="price">$49.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Peripheral 2 -->
+          <div class="card">
+            <h3> Microsoft Xbox Elite Wireless Controller Series 2</h3>
+            <img src="img/xb.jpg" alt="Peripheral 2">
+            <p class="description">The Elite Controller embodies Microsoft’s commitment to customization and precision. With adjustable thumbsticks, paddles, and comprehensive software integration, it caters to both casual and competitive gamers.</p>
+            <p class="price">$79.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Peripheral 3 -->
+          <div class="card">
+            <h3>Nintendo Joy-Con Controllers</h3>
+            <img src="img/jc.jpg" alt="Peripheral 3">
+            <p class="description">Joy-Con controllers showcase Nintendo’s innovative and versatile design philosophy. Their modular setup enables diverse play styles, from handheld mode to motion-controlled party games, emphasizing accessibility and fun.</p>
+            <p class="price">$59.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <!-- Peripheral 4 -->
+          <div class="card">
+            <h3> Valve Index Controllers</h3>
+            <img src="img/vi.jpg" alt="Peripheral 4">
+            <p class="description">The Index Controllers align with Valve’s dedication to cutting-edge technology and PC gaming. They feature individual finger tracking for a highly immersive VR experience, offering unmatched precision and interaction possibilities.</p>
+            <p class="price">$99.99</p>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison">
+        <h2>Comparison Section</h2>
+        <div class="table-container">
+          <!-- Console Comparison Table -->
+          <div class="comparison-table">
+            <h3>Console Comparison</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Controller</th>
+                  <th>Brand</th>
+                  <th>Feature</th>
+                  <th>Compatibility</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Controller 1</td>
+                  <td>Brand A</td>
+                  <td>4K Gaming</td>
+                  <td>PC, TV</td>
+                  <td>$399</td>
+                </tr>
+                <tr>
+                  <td>Controller 2</td>
+                  <td>Brand B</td>
+                  <td>VR Ready</td>
+                  <td>PC</td>
+                  <td>$499</td>
+                </tr>
+                <tr>
+                  <td>Controller 3</td>
+                  <td>Brand C</td>
+                  <td>Portable</td>
+                  <td>TV</td>
+                  <td>$299</td>
+                </tr>
+                <tr>
+                  <td>Controller 4</td>
+                  <td>Brand D</td>
+                  <td>Exclusive Games</td>
+                  <td>PC, Console</td>
+                  <td>$599</td>
+                </tr>
+                <tr>
+                  <td>Controller 5</td>
+                  <td>Brand E</td>
+                  <td>Customizable</td>
+                  <td>All Platforms</td>
+                  <td>$549</td>
+                </tr>
+                <tr>
+                  <td>Controller 6</td>
+                  <td>Brand F</td>
+                  <td>Cloud Gaming</td>
+                  <td>TV</td>
+                  <td>$449</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <!-- Peripheral Comparison Table -->
+          <div class="comparison-table">
+            <h3>Peripheral Comparison</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Controller</th>
+                  <th>Brand</th>
+                  <th>Feature</th>
+                  <th>Compatibility</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mouse 1</td>
+                  <td>Brand X</td>
+                  <td>Ergonomic</td>
+                  <td>PC, Mac</td>
+                  <td>$29</td>
+                </tr>
+                <tr>
+                  <td>Keyboard 2</td>
+                  <td>Brand Y</td>
+                  <td>Mechanical</td>
+                  <td>PC</td>
+                  <td>$89</td>
+                </tr>
+                <tr>
+                  <td>Headset 3</td>
+                  <td>Brand Z</td>
+                  <td>Surround Sound</td>
+                  <td>All Platforms</td>
+                  <td>$59</td>
+                </tr>
+                <tr>
+                  <td>Controller 4</td>
+                  <td>Brand W</td>
+                  <td>Wireless</td>
+                  <td>PC</td>
+                  <td>$49</td>
+                </tr>
+                <tr>
+                  <td>Headset 5</td>
+                  <td>Brand V</td>
+                  <td>Noise Canceling</td>
+                  <td>All Platforms</td>
+                  <td>$99</td>
+                </tr>
+                <tr>
+                  <td>Keyboard 6</td>
+                  <td>Brand U</td>
+                  <td>RGB Backlit</td>
+                  <td>PC, Mac</td>
+                  <td>$79</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+
+      <footer class="footer">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <p>© 2024 GMONT. All rights reserved.</p>
+          <nav class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms</a>
+          </nav>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="footer-right">
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#"><img src="img/fb.avif" alt="Facebook"></a>
+            <a href="#"><img src="img/x.avif" alt="Twitter"></a>
+            <a href="#"><img src="img/insta.avif" alt="Instagram"></a>
+            <a href="#"><img src="img/linkedin.avif" alt="LinkedIn"></a>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <p>Phone: +123-456-7890</p>
+            <p>Email: contact@gmont.com</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+

@@ -1,0 +1,435 @@
+/* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #0a0;
+    display: flex;
+    justify-content: center; /* Center the navbar */
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Navbar and Menu Styling for Mobile */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Show hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align heading and paragraph to the left */
+    height: 70vh; /* Adjust the height of the hero section */
+    background-image: url('img/bg11.avif'); /* Add your image file here */
+    background-size: cover; /* Make sure the background image covers the whole section */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    color: #f1eaea;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 1.5s;
+    padding-left: 20px; /* Add consistent padding for alignment */
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 10px; /* Optional spacing above */
+    width: 700px;
+    text-align: left;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Reduce height on mobile */
+        padding-left: 15px; /* Adjust padding */
+    }
+  
+    .hero h1 {
+        font-size: 2em; /* Reduce font size of heading */
+    }
+  
+    .hero p {
+        font-size: 0.9em; /* Slightly smaller font for paragraph */
+        width: 90%; /* Adjust paragraph width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+        height: 40vh; /* Further reduce height on very small screens */
+        padding-left: 10px; /* Adjust padding */
+    }
+  
+    .hero h1 {
+        font-size: 1.8em; /* Even smaller heading font size */
+    }
+  
+    .hero p {
+        font-size: 0.85em; /* Smaller paragraph font */
+        width: 100%; /* Allow paragraph to take up full width */
+    }
+  }
+  
+/* Popular Categories */
+.popular-categories {
+    text-align: center;
+    margin: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row with spacing */
+    background-color: #979393;
+    padding: 20px;
+    border-radius: 8px;
+    
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row on mobile */
+    }
+}
+
+
+/* Featured Games and Gaming News */
+/* Featured Games */
+.featured-games {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.featured-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    text-align: left;
+
+}
+
+.featured-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.featured-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.featured-card ul li {
+    margin: 10px 0;
+}
+
+/* Gaming News */
+.gaming-news {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width:75%;
+    text-align: left;
+}
+
+.news-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.news-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.news-card ul li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-container, .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card, .news-card {
+        width: 90%; /* Make the cards full width on small screens */
+    }
+}
+
+/* Why Choose Us */
+/* Base styles */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0a0;
+    color: #fff;
+}
+
+.why-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.why-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.why-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    font-size: 1em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .why-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .why-item {
+        flex: none; /* Reset flex for stacked items */
+        width: 100%; /* Full width for each item */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .why-item img {
+        width: 90%; /* Slightly smaller images */
+    }
+
+    .why-item p {
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us {
+        padding: 30px 10px; /* Reduce overall padding */
+    }
+
+    .why-item img {
+        width: 100%; /* Full width for images */
+    }
+
+    .why-item p {
+        font-size: 0.85em; /* Further reduce text size */
+    }
+}
+
+
+/* Footer */
+/* General Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  /* Right Section */
+  .footer-right {
+    text-align: right;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .social-icons a img {
+      margin-right: 5px;
+    }
+  }
+  

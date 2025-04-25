@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #0a0;
+  display: flex;
+  justify-content: center; /* Center the navbar */
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Navbar and Menu Styling for Mobile */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Show hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: flex;
+  }
+
+  .navbar.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar ul li {
+      margin: 10px 0;
+  }
+
+  .navbar ul li a {
+      font-size: 18px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align heading and paragraph to the left */
+  height: 70vh; /* Adjust the height of the hero section */
+  background-image: url('img/bbbb.avif'); /* Add your image file here */
+  background-size: cover; /* Make sure the background image covers the whole section */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  color: #f1eaea;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1.5s;
+  padding-left: 20px; /* Add consistent padding for alignment */
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-left: 0; /* Reset additional margins */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 10px; /* Optional spacing above */
+  width: 700px;
+  text-align: left;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      height: 50vh; /* Reduce height on mobile */
+      padding-left: 15px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 2em; /* Reduce font size of heading */
+  }
+
+  .hero p {
+      font-size: 0.9em; /* Slightly smaller font for paragraph */
+      width: 90%; /* Adjust paragraph width */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 40vh; /* Further reduce height on very small screens */
+      padding-left: 10px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 1.8em; /* Even smaller heading font size */
+  }
+
+  .hero p {
+      font-size: 0.85em; /* Smaller paragraph font */
+      width: 100%; /* Allow paragraph to take up full width */
+  }
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h2, h3 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* First Section with Contact Us and FAQ Cards */
+  .contact-faq {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+    background-color: #8f8a8a;
+  }
+  
+  .card {
+    background-color: #787373;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Each card takes up 48% of the available width */
+    padding: 20px;
+  }
+  
+  .contact-us {
+    border-left: 5px solid #4CAF50;
+  }
+  
+  .faq {
+    border-left: 5px solid #FF9800;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  .card ul {
+    margin: 10px 0;
+  }
+  
+  .card li {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .card li a {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  /* Browse & FAQ Section */
+  .browse-faq {
+    padding: 50px;
+    background-color: #eee5e5;
+    text-align: center;
+  }
+  
+  .browse-faq h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  .question-form {
+    margin-top: 20px;
+  }
+  
+  .question-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .question-form textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .question-form button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: rgb(75, 11, 11);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .question-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .contact-faq {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .browse-faq h2 {
+      font-size: 28px;
+    }
+  
+    .question-form textarea {
+      width: 90%;
+    }
+  
+    .question-form button {
+      width: 150px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  /* Right Section */
+  .footer-right {
+    text-align: right;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .social-icons a img {
+      margin-right: 5px;
+    }
+  }
+  
+  

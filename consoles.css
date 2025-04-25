@@ -1,0 +1,451 @@
+/* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #0a0;
+    display: flex;
+    justify-content: center; /* Center the navbar */
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Navbar and Menu Styling for Mobile */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Show hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align heading and paragraph to the left */
+  height: 70vh; /* Adjust the height of the hero section */
+  background-image: url('img/bggg7.avif'); /* Add your image file here */
+  background-size: cover; /* Make sure the background image covers the whole section */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  color: #f1eaea;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1.5s;
+  padding-left: 20px; /* Add consistent padding for alignment */
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-left: 0; /* Reset additional margins */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 10px; /* Optional spacing above */
+  width: 700px;
+  text-align: left;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      height: 50vh; /* Reduce height on mobile */
+      padding-left: 15px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 2em; /* Reduce font size of heading */
+  }
+
+  .hero p {
+      font-size: 0.9em; /* Slightly smaller font for paragraph */
+      width: 90%; /* Adjust paragraph width */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 40vh; /* Further reduce height on very small screens */
+      padding-left: 10px; /* Adjust padding */
+  }
+
+  .hero h1 {
+      font-size: 1.8em; /* Even smaller heading font size */
+  }
+
+  .hero p {
+      font-size: 0.85em; /* Smaller paragraph font */
+      width: 100%; /* Allow paragraph to take up full width */
+  }
+}
+
+.consoles {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .consoles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 15%;
+    background-color: #948f8f;
+    border: 1px solid #9b9797;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .card .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .card .buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card .buy-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  .peripherals {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .peripherals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 15%;
+    background-color: #8d8888;
+    border: 1px solid #7c7676;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .card .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .card .buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card .buy-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  .comparison {
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .comparison h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .comparison-table {
+    width: 48%; /* Adjust width to fit side by side */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comparison-table h3 {
+    font-size: 1.8rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 10px;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  
+  tbody td {
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .comparison-table {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  /* Right Section */
+  .footer-right {
+    text-align: right;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-right {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .social-icons a img {
+      margin-right: 5px;
+    }
+  }
+  
+  
+  
+  
